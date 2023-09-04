@@ -1,19 +1,44 @@
+@use '../partials/mixins';
+
 .main {
   &__section {
     min-height: 80vh;
+    padding: 2em;
     border: 1px solid var(--c-black);
   }
 }
 
 .home {
-  &__h1 {}
-  &__h2 {}
+  @include mixins.flex(column, nowrap, center, center);
+
+  &__h1 {
+    font-size: 3em;
+  }
+  &__h2 {
+    font-size: 2.5em;
+  }
+}
+
+.works{
+  @include mixins.flex(column, nowrap, flex-start, center);
+  gap: 4em;
+
+  &__h2{
+    font-size: 2.5em;
+  }
+  &__articles{
+    width: 100%;
+    @include mixins.flex(row, wrap, center, center);
+    gap: 2em;
+  }
+  &__article{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+  }
+  &__img{}
 }
 
 .about {
-  &__h2 {}
-}
-
-.works {
   &__h2 {}
 }

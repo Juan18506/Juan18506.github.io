@@ -1,8 +1,25 @@
+@use '../partials/mixins';
+
 .header{
+  width: 100%;
   border: 1px solid var(--c-black);
+  position: fixed;
+  top: 0;
+  left: 0;
   
   &__nav{}
-  &__ul{}
+  &__ul{
+    padding: 1em 2em;
+    @include mixins.flex(row, wrap, flex-end, center);
+    gap: 2em;
+  }
   &__li{}
-  &__a{}
+  &__a{
+    border-bottom: 1px solid currentColor;
+    transition: all 200ms ease;
+
+    &:hover { 
+      color: #51a1fc; 
+    }
+  }
 }
