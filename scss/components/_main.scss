@@ -1,0 +1,19 @@
+.main {
+  &__section {
+    min-height: 80vh;
+    border: 1px solid var(--c-black);
+  }
+}
+
+.home {
+  &__h1 {}
+  &__h2 {}
+}
+
+.about {
+  &__h2 {}
+}
+
+.works {
+  &__h2 {}
+}

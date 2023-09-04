@@ -5,17 +5,38 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Andres Alves Pedreira</title>
+  <title>Juan Alves Pedreira</title>
   <link rel="stylesheet" href="./style.css">
   <script defer type="module" src="./main.js"></script>
 </head>
 
 <body>
 
-  <header class="header"></header>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a href="#home" class="header__a">Home</a></li>
+        <li class="header__li"><a href="#works" class="header__a">Works</a></li>
+        <li class="header__li"><a href="#about" class="header__a">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="main">
-    <h1>My portfolio</h1>
+
+    <section class="main__section home" id="home">
+      <h1 class="home__h1">Juan Alves Pedreira</h1>
+      <h2 class="home__h2">Web Developer</h2>
+    </section>
+
+    <section class="main__section works" id="works">
+      <h2 class="works__h2">Works</h2>
+    </section>
+
+    <section class="main__section about" id="about">
+      <h2 class="about__h2">About Me</h2>
+    </section>
+
   </main>
 
   <footer class="footer"></footer>
