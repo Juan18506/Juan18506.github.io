@@ -233,11 +233,14 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.modal--active {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
 }
 .modal__img {
   width: 80%;
@@ -260,7 +263,7 @@ body {
   position: absolute;
   top: calc(50% - 1px);
   left: 0;
-  background-color: var(--c-white);
+  background-color: white;
 }
 .modal__span--x {
   transform: rotate(45deg);
