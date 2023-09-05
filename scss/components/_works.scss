@@ -1,0 +1,42 @@
+@use '../partials/mixins';
+
+.works{
+  @include mixins.flex(column, nowrap, flex-start, center);
+  gap: 4em;
+
+  &__h2{
+    font-size: 2.5em;
+  }
+  &__articles{
+    width: 100%;
+    @include mixins.flex(row, wrap, center, center);
+    gap: 2em;
+  }
+  &__article{
+    max-width: 750px;
+    padding: 1em;
+    @include mixins.flex(column, nowrap, center, center);
+    gap: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &__img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  &__h3 {}
+  &__p {}
+  &__links {
+    width: 100%;
+    @include mixins.flex(row, wrap, center, center);
+    gap: 2em;
+  }
+  &__a {
+    width: 35px;
+    height: 35px;
+  }
+  &__svg {
+    width: 100%;
+    height: 100%;
+  }
+}
