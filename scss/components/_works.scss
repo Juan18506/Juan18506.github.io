@@ -1,11 +1,14 @@
 @use '../partials/mixins';
 
 .works{
-  @include mixins.flex(column, nowrap, flex-start, center);
-  gap: 4em;
-
   &__h2{
     font-size: 2.5em;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include mixins.media(507px) {
+      font-size: 1.8em;
+    };
   }
   &__articles{
     width: 100%;
@@ -17,11 +20,11 @@
     padding: 1em;
     @include mixins.flex(column, nowrap, center, center);
     gap: 1.5em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--c-shadow);
   }
   &__img{
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--c-shadow);
     cursor: pointer;
   }
   &__h3 {}

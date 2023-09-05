@@ -1,3 +1,20 @@
+@use '../partials/mixins';
+
 .about {
-  &__h2 {}
+  &__h2 {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include mixins.media(507px) {
+      font-size: 1.8em;
+    };
+  }
+  &__content {
+    max-width: 800px;
+    margin: auto;
+  }
+  &__p {
+    margin-bottom: 1em;
+  }
 }
