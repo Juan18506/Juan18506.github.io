@@ -5,3 +5,7 @@
 @use 'components/main';
 @use 'components/footer';
 @use 'components/modal';
+
+body {
+  transition: all 300ms ease;
+}

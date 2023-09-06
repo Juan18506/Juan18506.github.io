@@ -21,4 +21,33 @@
       color: #51a1fc; 
     }
   }
+  &__button {}
 }
+
+.theme {
+  &__bar {
+    width: 100px;
+    height: 10px;
+    padding: 0 1em;
+    border-radius: 15px;
+    @include mixins.flex(row, nowrap, center, center);
+    position: relative;
+    background-color: var(--c-black);
+  }
+  &__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: #606060;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    &--right {
+      left: calc(100% - 25px);
+      background-color: antiquewhite;
+    }
+  }
+}
+

@@ -1,9 +1,20 @@
 :root {
   --c-black: #393939;
   --c-white: #ececec;
+  --c-theme: #606060;
   --c-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --p-fonts: Helvetica, Arial, sans-serif;
   --s-fonts: Verdana;
+}
+
+:root.dark {
+  --c-black: #ececec;
+  --c-white: #393939;
+}
+
+:root.light {
+  --c-white: #ececec;
+  --c-black: #393939;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -128,6 +139,32 @@ body {
 }
 .header__a:hover {
   color: #51a1fc;
+}
+.theme__bar {
+  width: 100px;
+  height: 10px;
+  padding: 0 1em;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--c-black);
+}
+.theme__circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  background-color: #606060;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.theme__circle--right {
+  left: calc(100% - 25px);
+  background-color: antiquewhite;
 }
 
 .home {
@@ -270,4 +307,8 @@ body {
 }
 .modal__span--y {
   transform: rotate(-45deg);
+}
+
+body {
+  transition: all 300ms ease;
 }
