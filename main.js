@@ -4,6 +4,8 @@ matchMedia('(prefers-color-scheme: dark)').matches
   ? document.documentElement.classList.add('dark')
   : document.documentElement.classList.add('light')
 
+observeWorksImages()
+
 document.addEventListener('click', (e) => {
   if (e.target.matches('.works__img')) {
     const modal = document.querySelector('.modal')
@@ -37,3 +39,15 @@ document.addEventListener('click', (e) => {
     }
   }
 })
+
+function observeWorksImages() {
+  const $workImages = document.querySelectorAll('.works__article')
+  const observer = new IntersectionObserver(intersectionHandler, { threshold: 0.5 })
+  $workImages.forEach((image) => observer.observe(image))
+
+  function intersectionHandler(entries, observer) {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle('works__article--active', entry.isIntersecting)
+    })
+  }
+}

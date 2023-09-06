@@ -21,6 +21,20 @@
     @include mixins.flex(column, nowrap, center, center);
     gap: 1.5em;
     box-shadow: var(--c-shadow);
+    opacity: 0;
+    transition: all 300ms ease;
+
+    &:nth-of-type(even) {
+      transform: translateX(+50%);
+    }
+    &:nth-of-type(odd) {
+      transform: translateX(-50%);
+    }
+
+    &--active {
+      opacity: 1;
+      transform: translateX(0) !important;
+    }
   }
   &__img{
     width: 100%;
