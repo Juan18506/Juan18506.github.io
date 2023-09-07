@@ -134,6 +134,12 @@ body {
   align-items: center;
   gap: 2em;
 }
+@media screen and (max-width: 507px) {
+  .header__ul {
+    gap: 1em;
+    justify-content: center;
+  }
+}
 .header__a {
   border-bottom: 1px solid currentColor;
   transition: all 200ms ease;
@@ -208,6 +214,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  overflow: hidden;
 }
 .works__article {
   max-width: 750px;

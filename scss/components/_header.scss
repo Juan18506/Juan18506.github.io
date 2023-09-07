@@ -12,6 +12,11 @@
     padding: 1em 2em;
     @include mixins.flex(row, wrap, flex-end, center);
     gap: 2em;
+
+    @include mixins.media(507px) {
+      gap: 1em;
+      justify-content: center;
+    }
   }
   &__li{}
   &__a{
