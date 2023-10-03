@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Juan Alves Pedreira web portfolio">
   <title>Juan Alves Pedreira</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <li class="header__li"><a href="#works" class="header__a">Works</a></li>
         <li class="header__li"><a href="#about" class="header__a">About</a></li>
         <li class="header__li">
-          <button class="header__button theme">
+          <button class="header__button theme" title="Change theme">
             <span class="theme__bar">
               <span class="theme__circle"></span>
             </span>
@@ -40,41 +41,31 @@
 
       <div class="works__articles">
         <article class="works__article">
-          <img class="works__img" src="/mva.png" alt="imagen">
+          <img class="works__img" src="/mva.webp" alt="imagen">
           <h3 class="works__h3">Mahouka Visitor Arc Web Page</h3>
           <p class="works__p">
-            It's a copycat of Mahouka visitor arc landing page,
-            It was made using HTML, SCSS, BEM methodology and Javascript.
+            It is a copycat of Mahouka visitor arc landing page,
+            It was made with HTML, SCSS, BEM methodology and Javascript.
           </p>
-
-          <!-- <div class="works__technologies">
-            <p>Technologies Used</p>
-            <div class="works__links">
-              <img class="works__svg" src="/html.svg" alt="HTML 5">
-              <img class="works__svg" src="/css.svg" alt="CSS 3">
-              <img class="works__svg" src="/js.svg" alt="Javascript">
-            </div>
-          </div> -->
-
           <div class="works__links">
-            <a class="works__a" href="https://github.com/juan18506/Mahouka-visitor-arc" target="_blank"
+            <a class="works__a" href="https://github.com/juan18506/mahouka-visitor-arc" target="_blank"
               rel="noopener noreferrer">
-              <img src="/github.svg" alt="Github">
+              <img class="works__svg" src="/github.svg" alt="Github">
             </a>
-            <a class="works__a" href="https://juan18506.github.io/Mahouka-visitor-arc/" target="_blank"
+            <a class="works__a" href="https://juan18506.github.io/mahouka-visitor-arc/" target="_blank"
               rel="noopener noreferrer">
-              <img src="/live.svg" alt="Go live">
+              <img class="works__svg" src="/live.svg" alt="Go live">
             </a>
           </div>
         </article>
 
         <article class="works__article">
-          <img class="works__img" src="/tdl.png" alt="imagen">
+          <img class="works__img" src="/tdl.webp" alt="imagen">
           <h3 class="works__h3">To-Do app</h3>
           <p class="works__p">
-            It's a to-do app where you can create, set complete
+            It is a to-do app where you can create, set complete
             your to-dos and see the quantity of uncompleted-completed
-            to-dos in real time, don't worry, your to-dos will be
+            to-dos in real time, do not worry, your to-dos will be
             saved even after leaving the page!.
           </p>
           <div class="works__links">
@@ -82,6 +73,23 @@
               <img class="works__svg" src="/github.svg" alt="Github">
             </a>
             <a class="works__a" href="https://juan18506.github.io/to-do-app/" target="_blank" rel="noopener noreferrer">
+              <img class="works__svg" src="/live.svg" alt="Go live">
+            </a>
+          </div>
+        </article>
+
+        <article class="works__article">
+          <img class="works__img" src="/witp.webp" alt="imagen">
+          <h3 class="works__h3">Who is that Pokemon app</h3>
+          <p class="works__p">
+            It is an app in which you can play the famous game 
+            who is that pokemon, it was made with React and Typescript. 
+          </p>
+          <div class="works__links">
+            <a class="works__a" href="https://github.com/juan18506/react-who-is-that-pokemon" target="_blank" rel="noopener noreferrer">
+              <img class="works__svg" src="/github.svg" alt="Github">
+            </a>
+            <a class="works__a" href="https://juan18506.github.io/react-who-is-that-pokemon/" target="_blank" rel="noopener noreferrer">
               <img class="works__svg" src="/live.svg" alt="Go live">
             </a>
           </div>
@@ -122,7 +130,7 @@
   </footer>
 
   <div class="modal">
-    <img class="modal__img" src="/mva.png" alt="imagen">
+    <img class="modal__img" src="/mva.webp" alt="imagen">
     <button class="modal__close">
       <span class="modal__span modal__span--x"></span>
       <span class="modal__span modal__span--y"></span>

@@ -42,7 +42,7 @@ document.addEventListener('click', (e) => {
 
 function observeWorksImages() {
   const $workImages = document.querySelectorAll('.works__article')
-  const observer = new IntersectionObserver(intersectionHandler, { threshold: 0.5 })
+  const observer = new IntersectionObserver(intersectionHandler, { threshold: 0.25 })
   $workImages.forEach((image) => observer.observe(image))
 
   function intersectionHandler(entries, observer) {
