@@ -11,12 +11,12 @@
 
 :root.dark {
   --c-black: #ececec;
-  --c-white: #272727;
+  --c-white: #121212;
 }
   
 :root.light {
   --c-white: #ececec;
-  --c-black: #272727;
+  --c-black: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
