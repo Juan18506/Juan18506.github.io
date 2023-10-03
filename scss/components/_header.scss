@@ -32,8 +32,8 @@
 
 .theme {
   &__bar {
-    width: 100px;
-    height: 10px;
+    width: 6.25rem;
+    height: .625rem;
     padding: 0 1em;
     border-radius: 15px;
     @include mixins.flex(row, nowrap, center, center);

@@ -3,9 +3,25 @@
 
 @use 'components/header';
 @use 'components/main';
-@use 'components/footer';
 @use 'components/modal';
+@use 'partials/mixins';
+
 
 body {
   transition: all 300ms ease;
+}
+
+.links {
+  width: 100%;
+  @include mixins.flex(row, wrap, center, center);
+  gap: 2em;
+
+  &__a {
+    width: 35px;
+    height: 35px;
+  }
+  &__svg {
+    width: 100%;
+    height: 100%;
+  }
 }
