@@ -15,6 +15,7 @@ body {
   width: 100%;
   @include mixins.flex(row, wrap, center, center);
   gap: 2em;
+  fill: var(--c-white);
 
   &__a {
     width: 35px;
